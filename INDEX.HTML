@@ -141,14 +141,16 @@
             text-align: center;
         }
 
-        video {
+        .video-section iframe {
             width: 100%;
             max-width: 850px;
+            height: 480px;
             border: 4px solid #d9232e;
             border-radius: 12px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
         }
 
+        /* --- QR --- */
         .qr {
             text-align: center;
             margin-top: 2rem;
@@ -157,6 +159,11 @@
         .qr img {
             width: 150px;
             margin-top: 1rem;
+        }
+
+        /* --- BCG --- */
+        .bcg-section {
+            text-align: center;
         }
 
         footer {
@@ -183,6 +190,7 @@
         <a href="#barreras">Barreras</a>
         <a href="#pestel">PESTEL</a>
         <a href="#foda">FODA</a>
+        <a href="#bcg">BCG</a>
         <a href="#qr">QR</a>
     </nav>
 
@@ -191,10 +199,11 @@
         <h2>Presentación Institucional
             <img src="ISSP.png" alt="logo san pablo" style="height: 45px;">
         </h2>
-        <video controls>
-            <source src="Dahua Technology Company Introduction.mp4" type="video/mp4">
-            Tu navegador no soporta la reproducción de video.
-        </video>
+        <iframe src="https://www.youtube.com/embed/0yr92MxfEpQ?start=29" title="Presentación Dahua Technology"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
     </section>
 
     <!-- INTRO -->
@@ -208,13 +217,11 @@
     <section id="mision">
         <h2>Misión</h2>
         <p>Permitir una sociedad más segura y una vida más inteligente, ofreciendo calidad y servicio excepcionales a
-            través
-            de la innovación tecnológica.</p>
+            través de la innovación tecnológica.</p>
 
         <h2>Visión</h2>
         <p>Construir una sociedad segura, inteligente y eficiente, liderando la transformación digital en el ámbito de
-            la
-            seguridad y la inteligencia artificial.</p>
+            la seguridad y la inteligencia artificial.</p>
 
         <h2>Valores</h2>
         <ul>
@@ -230,8 +237,7 @@
         <h2>¿Qué necesidades y deseos busca satisfacer?</h2>
         <p>Dahua ofrece soluciones inteligentes que responden a la necesidad de seguridad, eficiencia y conectividad. A
             través de la IA y el IoT, brinda sistemas fáciles de usar, confiables y sostenibles que mejoran la
-            experiencia del
-            cliente.</p>
+            experiencia del cliente.</p>
     </section>
 
     <!-- BARRERAS -->
@@ -251,7 +257,6 @@
             <li>Regulaciones de información sensible.</li>
         </ul>
     </section>
-
 
     <!-- PESTEL -->
     <section id="pestel">
@@ -299,40 +304,50 @@
                 <td><strong>Legal</strong></td>
                 <td>Legislación del país donde se encuentra la empresa y donde busca expandirse.</td>
                 <td>• Normativas de protección de datos (ej. RGPD).<br>• Leyes sobre seguridad electrónica.<br>•
-                    Requisitos de certificaciones para productos.</td>
+                    Requisitos
+                    de certificaciones para productos.</td>
             </tr>
         </table>
-    </section>
     </section>
 
     <!-- FODA -->
     <section id="foda">
         <h2>FODA Ampliado</h2>
         <table>
-
-            <td><strong>Contexto Interno</strong></td>
-            <td>FORTALEZA: Personal capacitado en instalación y configuración de sistemas modernos de cámaras de
-                seguridad.</td>
+            <tr>
+                <td><strong>Contexto Interno</strong></td>
+                <td>FORTALEZA: Personal capacitado en instalación y configuración de sistemas modernos de cámaras de
+                    seguridad.</td>
             </tr>
             <tr>
                 <td><strong>Contexto Externo</strong></td>
-                <td>OPOERUNIDADES: Creciente demanda de seguridad dado a los niveles actuales de inseguridad</td>
+                <td>OPORTUNIDADES: Creciente demanda de seguridad dado a los niveles actuales de inseguridad</td>
             </tr>
             <tr>
                 <td><strong>Contexto Externo</strong></td>
-                <td>DEBILIDADES: Proovedores externos e internaciones
+                <td>DEBILIDADES: Proveedores externos e internacionales</td>
             </tr>
             <tr>
                 <td><strong>Contexto Externo</strong></td>
-                <td>AMENAZAS: Vulnerabilidad a los sistemas informaticos
+                <td>AMENAZAS: Vulnerabilidad a los sistemas informáticos</td>
             </tr>
         </table>
+    </section>
+
+    <!-- BCG -->
+    <section id="bcg" class="bcg-section">
+        <h2>Matriz BCG Dahua</h2>
+        <p>Aquí puedes agregar tu análisis y explicación sobre la posición de Dahua en la matriz BCG, describiendo
+            estrellas, interrogantes, vacas lecheras y perros.
+        </p>
+        <img src="matriz.png" alt="Matriz BCG Dahua"
+            style="display:block; margin: 1rem auto; max-width:90%; height:auto; border-radius:8px;">
     </section>
 
     <!-- QR -->
     <section id="qr" class="qr">
         <h2>Escaneá para ver el trabajo completo</h2>
-        <p style="text-align: center;">Escaneá el código QR para acceder al documento completo del trabajo práctico.</p>
+        <p>Escaneá el código QR para acceder al documento completo del trabajo práctico.</p>
         <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.dahuasecurity.com/es"
             alt="QR Dahua">
     </section>
