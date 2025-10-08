@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dahua Technology - Estrategia Empresarial</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 1rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #d9232e;
+            font-weight: 600;
+            transition: 0.3s ease;
+            position: relative;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            left: 0;
+            bottom: -5px;
+            background-color: #d9232e;
+            transition: 0.3s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        header {
+            background-color: #d9232e;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 1rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+
+        header img {
+            width: 50px;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 2rem auto;
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        section:hover {
+            transform: scale(1.01);
+        }
+
+        h2 {
+            color: #d9232e;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #d9232e;
+            display: inline-block;
+            padding-bottom: 4px;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #555;
+            text-align: justify;
+        }
+
+        ul {
+            margin-left: 1.5rem;
+            color: #555;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #d9232e;
+            color: white;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        td strong {
+            color: #d9232e;
+        }
+
+        /* --- VIDEO --- */
+        .video-section {
+            text-align: center;
+        }
+
+        video {
+            width: 100%;
+            max-width: 850px;
+            border: 4px solid #d9232e;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .qr {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .qr img {
+            width: 150px;
+            margin-top: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #ffffff;
+            color: #000;
+            padding: 1rem;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>DAHUA TECHNOLOGY <img src="logo-removebg-preview.png" alt="logo"></h1>
+    </header>
+
+    <nav>
+        <a href="#intro">Introducción</a>
+        <a href="#mision">Misión / Visión</a>
+        <a href="#necesidades">Necesidades</a>
+        <a href="#barreras">Barreras</a>
+        <a href="#pestel">PESTEL</a>
+        <a href="#foda">FODA</a>
+        <a href="#qr">QR</a>
+    </nav>
+
+    <!-- 🎥 VIDEO -->
+    <section class="video-section">
+        <h2>Presentación Institucional
+            <img src="ISSP.png" alt="logo san pablo" style="height: 45px;">
+        </h2>
+        <video controls>
+            <source src="Dahua Technology Company Introduction.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+        </video>
+    </section>
+
+    <!-- INTRO -->
+    <section id="intro">
+        <h2>Introducción</h2>
+        <p>Dahua Technology es una empresa líder mundial en soluciones de videovigilancia y servicios AIoT. Fundada en
+            2001, se destaca por su innovación, calidad y presencia global en más de 180 países.</p>
+    </section>
+
+    <!-- MISION / VISION -->
+    <section id="mision">
+        <h2>Misión</h2>
+        <p>Permitir una sociedad más segura y una vida más inteligente, ofreciendo calidad y servicio excepcionales a
+            través
+            de la innovación tecnológica.</p>
+
+        <h2>Visión</h2>
+        <p>Construir una sociedad segura, inteligente y eficiente, liderando la transformación digital en el ámbito de
+            la
+            seguridad y la inteligencia artificial.</p>
+
+        <h2>Valores</h2>
+        <ul>
+            <li>Compromiso con la calidad</li>
+            <li>Innovación constante</li>
+            <li>Integridad y profesionalismo</li>
+            <li>Enfoque en el cliente</li>
+        </ul>
+    </section>
+
+    <!-- NECESIDADES -->
+    <section id="necesidades">
+        <h2>¿Qué necesidades y deseos busca satisfacer?</h2>
+        <p>Dahua ofrece soluciones inteligentes que responden a la necesidad de seguridad, eficiencia y conectividad. A
+            través de la IA y el IoT, brinda sistemas fáciles de usar, confiables y sostenibles que mejoran la
+            experiencia del
+            cliente.</p>
+    </section>
+
+    <!-- BARRERAS -->
+    <section id="barreras">
+        <h2>Barreras de entrada y salida</h2>
+        <h3>Barreras de entrada</h3>
+        <ul>
+            <li>Alta inversión inicial en equipos y capacitación del personal.</li>
+            <li>Regulaciones en el mercado de exportaciones.</li>
+            <li>Requerimientos de confidencialidad y manejo de información.</li>
+        </ul>
+
+        <h3>Barreras de salida</h3>
+        <ul>
+            <li>Obligaciones contractuales de manejo de datos.</li>
+            <li>Costos de servicio postventa y mantenimiento.</li>
+            <li>Regulaciones de información sensible.</li>
+        </ul>
+    </section>
+
+
+    <!-- PESTEL -->
+    <section id="pestel">
+        <h2>Análisis PESTEL</h2>
+        <table>
+            <tr>
+                <th>Factores</th>
+                <th>Consideraciones para el análisis</th>
+                <th>Variable</th>
+            </tr>
+            <tr>
+                <td><strong>Político</strong></td>
+                <td>Políticas gubernamentales a nivel local, regional, nacional y/o internacional que inciden
+                    directamente en la organización.</td>
+                <td>• Legislaciones sobre privacidad y videovigilancia.<br>• Acuerdos comerciales internacionales.<br>•
+                    Estabilidad política de los países donde opera.</td>
+            </tr>
+            <tr>
+                <td><strong>Económico</strong></td>
+                <td>Factores macroeconómicos que pueden afectar la ejecución de planes y estrategias.</td>
+                <td>• Inflación y tipos de cambio.<br>• Costo de importación de componentes.<br>• Nivel de inversión en
+                    seguridad pública y privada.</td>
+            </tr>
+            <tr>
+                <td><strong>Social</strong></td>
+                <td>Factores culturales, educación, religión, hábitos de consumo y tendencias sociales. Análisis de los
+                    usuarios.</td>
+                <td>• Aumento de la percepción de inseguridad.<br>• Cambios en la aceptación del monitoreo público.<br>•
+                    Tendencia hacia ciudades inteligentes.</td>
+            </tr>
+            <tr>
+                <td><strong>Tecnológico</strong></td>
+                <td>Factores asociados a la evolución tecnológica. Es necesario evaluarlos para no perder
+                    competitividad.</td>
+                <td>• Avances en IA y reconocimiento facial.<br>• Obsolescencia rápida de tecnologías.<br>• Integración
+                    con IoT.</td>
+            </tr>
+            <tr>
+                <td><strong>Ecológico</strong></td>
+                <td>Relacionados con la conservación del medio ambiente. Incluye legislación ambiental.</td>
+                <td>• Regulaciones sobre residuos electrónicos.<br>• Producción sostenible.<br>• Presión para reducir
+                    consumo energético.</td>
+            </tr>
+            <tr>
+                <td><strong>Legal</strong></td>
+                <td>Legislación del país donde se encuentra la empresa y donde busca expandirse.</td>
+                <td>• Normativas de protección de datos (ej. RGPD).<br>• Leyes sobre seguridad electrónica.<br>•
+                    Requisitos de certificaciones para productos.</td>
+            </tr>
+        </table>
+    </section>
+    </section>
+
+    <!-- FODA -->
+    <section id="foda">
+        <h2>FODA Ampliado</h2>
+        <table>
+
+            <td><strong>Contexto Interno</strong></td>
+            <td>FORTALEZA: Personal capacitado en instalación y configuración de sistemas modernos de cámaras de
+                seguridad.</td>
+            </tr>
+            <tr>
+                <td><strong>Contexto Externo</strong></td>
+                <td>OPOERUNIDADES: Creciente demanda de seguridad dado a los niveles actuales de inseguridad</td>
+            </tr>
+            <tr>
+                <td><strong>Contexto Externo</strong></td>
+                <td>DEBILIDADES: Proovedores externos e internaciones
+            </tr>
+            <tr>
+                <td><strong>Contexto Externo</strong></td>
+                <td>AMENAZAS: Vulnerabilidad a los sistemas informaticos
+            </tr>
+        </table>
+    </section>
+
+    <!-- QR -->
+    <section id="qr" class="qr">
+        <h2>Escaneá para ver el trabajo completo</h2>
+        <p style="text-align: center;">Escaneá el código QR para acceder al documento completo del trabajo práctico.</p>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.dahuasecurity.com/es"
+            alt="QR Dahua">
+    </section>
+
+    <footer>
+        <p>Realizado por: Cejas Valentino · ABT Noela · Correa Camilo · Osuna Milagros | Octubre 2025</p>
+    </footer>
+
+</body>
+
+</html>
